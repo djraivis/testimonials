@@ -1,0 +1,14 @@
+nav {
+  /* background: orange; */
+  color: var(--reactColor);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  /* margin: 0 auto; */
+}
+
+li {
+  list-style: none;
+  display: flex;
+}

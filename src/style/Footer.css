@@ -1,0 +1,11 @@
+footer {
+  margin: 0;
+  background: var(--bgDark);
+  color: var(--textW);
+  font-size: var(--footerFontSize);
+  padding: var(--footerPadding);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}

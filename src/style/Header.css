@@ -1,0 +1,72 @@
+header {
+  background-color: var(--bgDark);
+  /* font-size: var(--headerFontSize); */
+  /* text-align: center; */
+  /* font-size: calc(10px + 2vmin); */
+  /* height: 90px; */
+  /* overflow-x: auto; */
+  /* min-height: 20vh; */
+}
+
+.header--container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--headerPadding);
+  max-width: var(--containerMax-width);
+  margin: 0 auto;
+}
+
+.header--logo {
+  height: 80px;
+  /* margin-right: 7px; */
+}
+
+.header--logo_text {
+  font-weight: 700;
+  color: var(--reactColor);
+  font-size: var(--headerFontSize);
+  margin-right: auto;
+  line-height: normal;
+}
+
+@media (max-width: 768px) {
+  .header--logo_text {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header--a_link {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .header--a_link {
+    color: var(--textW);
+    text-decoration: none;
+    font-weight: bold;
+    font-weight: 600;
+    pointer-events: none;
+    font-size: 14px;
+    margin-right: 40px;
+  }
+}
+
+/* =========================================================== */
+/* Icon Spin */
+@media (prefers-reduced-motion: no-preference) {
+  .header--logo {
+    animation: header--logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes header--logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

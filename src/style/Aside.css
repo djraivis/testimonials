@@ -1,0 +1,11 @@
+.aside {
+  /* background: orange; */
+  /* padding: 30px; */
+  color: var(--reactColor);
+  text-align: center;
+  background-image: url(/public/logo512.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-size: 100%;
+}

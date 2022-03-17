@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+// IMPORT COMPONENTS
+import Header from './components/Header'
+import Nav from './components/Nav'
+import Main from './components/Main'
+import Aside from './components/Aside'
+import Testimonials from './components/Testimonials'
+import Footer from './components/Footer'
+// IMPORT STYLING
+import './style/App.css'
 
+import './style/Header.css'
+import './style/Nav.css'
+import './style/Main.css'
+import './style/Aside.css'
+import './style/Testimonials.css'
+import './style/Footer.css'
+
+//FUNCTION APP INDIVIDUAL SECTIONS
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>
+      <Header />
+      {/* <div className="main-wrap">
+        <Nav />
+        <Main />
+        <Aside />
+      </div> */}
+      <Testimonials />
+      <Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -1,0 +1,70 @@
+/* Padding added only on top */
+.new-properties {
+  padding-block: 10px;
+  letter-spacing: -0.05em;
+  height: 10vmin;
+  height: 100vh;
+}
+
+/* Change bullets*/
+.main--facts > li::marker {
+  font-size: 1.4rem;
+}
+
+main {
+  background-image: url(/public/logo512.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: 75%;
+}
+
+/* CSS GRID */
+.app {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  height: 100vh;
+
+  display: grid;
+  grid-template-areas:
+    'header header header'
+    'nav content sidebar'
+    'testimonials testimonials testimonials'
+    'footer footer footer';
+  grid-template-columns: 1fr 7fr 2fr;
+  grid-template-rows: 120px 1fr 40px;
+}
+
+/* header,
+footer,
+main,
+.aside,
+nav {
+  background-color: #fff;
+  color: #fff;
+  padding: 20px;
+  border: skyblue 1px solid;
+} */
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+/* main {
+  grid-area: Main;
+} */
+
+aside {
+  grid-area: sidebar;
+}
+
+.testimonials {
+  grid-area: testimonials;
+}
+
+footer {
+  grid-area: footer;
+}
