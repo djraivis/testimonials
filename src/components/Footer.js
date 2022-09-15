@@ -2,7 +2,7 @@ import React from 'react'
 
 // import '../index.css'
 
-function Footer() {
+function Footer () {
   return (
     <footer>
       <h4>This is footer © 2022</h4>
