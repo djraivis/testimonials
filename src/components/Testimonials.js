@@ -2,7 +2,7 @@ import React from 'react'
 // import './style/Testimonials.css'
 
 
-function Testimonials() {
+function Testimonials () {
   return (
     <div class="testimonials">
       <div class="card card--bg-purple">
